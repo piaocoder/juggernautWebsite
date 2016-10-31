@@ -1,0 +1,60 @@
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+	margin: 0;
+	padding: 0;
+}
+html, body, fieldset, img, iframe, abbr {
+    border: 0;
+}
+
+
+ul,ol,li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+    font-size: 100%;
+}
+
+pre, code, kbd, samp {
+    font-family: inherit;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+	
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label, summary {
+    cursor: default;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+img{
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+    font-weight: bold;
+}
+
+del, ins, u, s, a, a:hover {
+    text-decoration: none;
+}
+body,html{
+	max-width: 100%;
+}
+body>div{
+	width: 100%;
+}
+.content{
+	width: 960px;
+	min-height: 30px;
+}

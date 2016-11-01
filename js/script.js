@@ -14,7 +14,9 @@ $(document).on("mousewheel DOMMouseScroll", function(e) {
 		$(".nav li").eq(Math.floor(current)).addClass("checked").siblings().removeClass()
 		$("body").stop().animate({
 			top: -h * Math.floor(current)
-		}, 500)
+		}, 500,function(){
+			console.log(SIZE)
+		})
 
 	} else if(delta < 0) {
 		// 向下滚

@@ -4,3 +4,24 @@
 	background: #ccc;
 	width: 100%;
 }
+
+.mainbox .banner{
+	background: url(./../img/main_bg_01.jpg) no-repeat;
+	background-size:cover;
+}
+
+.mainbox>div>div.bg{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+}
+
+.mainbox .service{
+	background: url(./../img/main_bg_02.jpg) no-repeat;
+	background-size:cover;
+}
+
+.mainbox .footer{
+	background: url(./../img/main_bg_03.jpg) no-repeat;
+	background-size:cover;
+}

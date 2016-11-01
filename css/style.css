@@ -79,3 +79,22 @@ body>div{
 .r,.right{
 	float: right;
 }
+.mainbox,.mainbox>div{
+	height: 100%;
+	width: 100%;
+}
+.content{
+	width: 960px;
+	min-height: 30px;
+}
+/*css reset*/
+
+
+/*test css*/
+.banner,.footer{
+	background: yellow;
+}
+.service{
+	background: deepskyblue;
+}
+/*test css*/

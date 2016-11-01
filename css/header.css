@@ -1,11 +1,15 @@
 .header{
+	position: fixed;
 	height: 60px;
 	width: 100%;
-	background: #1185ea;
+	background: rgba(0,0,0,0.2);
+	/*background: #1185ea;*/
+	border-bottom: 1px solid #a62307;
+	/*opacity: 0.3*/
 }
 
 .header a{
-	color: #fff;
+	color: #333;
 }
 .header .content{
 	height: 100%;
@@ -13,8 +17,17 @@
 
 .header .logo{
 	display: block;
-	line-height: 70px;
+	/*line-height: 70px;*/
 	font-weight: bold;
+}
+
+.header .logo img{
+	height: 35px;
+	margin-top: 6px;
+}
+
+.header .logo p{
+	margin-top: -10px;
 }
 
 .header .nav{
@@ -43,9 +56,38 @@
 }
 
 .header .nav ul li.checked{
-	background: #f00;
+	background: #a62307;
+	color: #fff;
+}
+
+.header .nav ul li.checked a{
+	color: #fff;
 }
 
 .header .nav ul li:hover{
-	background: #f00;
+	background: #a62307;
+	color: #fff;
+}
+
+.header .nav ul li:hover a{
+	color: #fff;
+}
+
+.header .tel{
+	line-height: 60px;
+}
+
+.header .tel b{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: url(./../img/tel.png);
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+.header .tel a{
+	color: #a62307;
+	font-size: 20px;
+	font-family: '微软雅黑'
 }

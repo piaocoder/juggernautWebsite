@@ -1,0 +1,51 @@
+.header{
+	height: 60px;
+	width: 100%;
+	background: #1185ea;
+}
+
+.header a{
+	color: #fff;
+}
+.header .content{
+	height: 100%;
+}
+
+.header .logo{
+	display: block;
+	line-height: 70px;
+	font-weight: bold;
+}
+
+.header .nav{
+	line-height: 60px;
+	font-size: 20px;
+	margin-left: 200px;
+	/*font-weight: bold;*/
+}
+
+.header .nav ul li{
+	display: block;
+	float: left;
+	/*margin: 0 10px 0 10px;*/
+	-webkit-transition: background .3s;
+	-moz-transition: background .3s;
+	-ms-transition: background .3s;
+	-o-transition: background .3s;
+	transition: background .3s;
+}
+
+.header .nav ul li a{
+	display: block;
+	margin: 0 10px;
+	/*width: 100%;*/
+	height: 100%;
+}
+
+.header .nav ul li.checked{
+	background: #f00;
+}
+
+.header .nav ul li:hover{
+	background: #f00;
+}

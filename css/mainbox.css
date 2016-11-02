@@ -5,13 +5,17 @@
 	width: 100%;
 }
 
+.mainbox>div{
+	overflow: hidden;
+}
+
 .mainbox .banner{
 	background: url(./../img/main_bg_01.jpg) no-repeat;
 	background-size:cover;
 }
 
 .mainbox .content{
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .mainbox>div>div.bg{
@@ -46,6 +50,8 @@
 
 .mainbox .banner .bg .content{
 	padding-top: 14%;
+	padding-top: 7%\9 !important;
+	padding-top: 7%\0 !important;
 }
 
 .mainbox .banner .bg .content .companyIntroduction{
@@ -56,7 +62,7 @@
 	background: rgba(0,0,0,0.5);
 	color: #fff;
 	margin: 0 auto;
-	text-align: left;
+	/*text-align: left;*/
 }
 
 .mainbox .banner .bg .content .companyIntroduction h2{
@@ -81,5 +87,5 @@
 	/*text-indent: 2em;*/
 	width: 800px;
 	margin: 30px auto;
-	text-align: left;
+	/*text-align: left;*/
 }

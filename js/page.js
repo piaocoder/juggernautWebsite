@@ -1,6 +1,5 @@
 
 (function(){
-
 	var pageNum = 0.5;
 	var flg = true;
 	var h = $(window).height();
@@ -19,12 +18,15 @@
 		// console.log(- h * num);
 		$("body").stop().animate({
 			top: -h * Math.floor(num) 
-		}, 200)
+		}, 200);
+		$(".positionFixed").stop().animate({
+			top: h * Math.floor(num)
+		}, 200);
 		return Math.floor(num)+0.5;
 	}
 	$('.header .nav ul li').click(function(){
 		var idx = $('.header .nav ul li').index(this);
-		console.log(idx);
+		// console.log(idx);
 		pageNum = changePage(idx);
 		// console.log(pageNum)
 		// pageNum = idx;
@@ -36,13 +38,12 @@
 		if(flg){
 			pageNum -= delta;
 			pageNum = changePage(pageNum);
-			console.log(pageNum);
+			// console.log(pageNum);
 			flg = false;
 
 			setTimeout(function() {
 				flg = true;
-			}, 1000);
+			}, 750);
 		}
-
 	})
 })()

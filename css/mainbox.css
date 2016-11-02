@@ -13,7 +13,8 @@
 .mainbox>div>div.bg{
 	height: 100%;
 	width: 100%;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);    /*IE8支持*/
 }
 
 .mainbox .service{

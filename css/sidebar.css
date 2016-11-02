@@ -1,0 +1,20 @@
+#sidebar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	margin-top: 20%;
+}
+#sidebar .menu{
+	width: 50px;
+	height: 100px;
+	background: #000;
+	border-radius: 10px 0 0 10px;
+}
+
+#sidebar .menuCtrl{
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+}

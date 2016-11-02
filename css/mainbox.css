@@ -10,11 +10,19 @@
 	background-size:cover;
 }
 
+.mainbox .content{
+	height: 100%;
+}
+
 .mainbox>div>div.bg{
 	height: 100%;
 	width: 100%;
-	background: rgba(0,0,0,0.6);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);    /*IE8支持*/
+	background: rgba(0,0,0,0.2);
+	/*-webkit-transition: all .5s linear 1s;
+	-moz-transition: all .5s linear 1s;
+	-ms-transition: all .5s linear 1s;
+	-o-transition: all .5s linear 1s;
+	transition: all .5s linear 1s;*/
 }
 
 .mainbox .service{
@@ -25,4 +33,52 @@
 .mainbox .footer{
 	background: url(./../img/main_bg_03.jpg) no-repeat;
 	background-size:cover;
+}
+
+.mainbox .banner .bg{
+	/*-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);*/
+
+}
+
+.mainbox .banner .bg .content{
+	padding-top: 60px;
+}
+
+.mainbox .banner .bg .content .companyIntroduction{
+	width: 100%;
+	height: 80%;
+	/*margin-top: 10%;*/
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.mainbox .banner .bg .content .companyIntroduction h2{
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 200px;
+	height: 120px;
+	width: 800px;
+	margin: 0px auto 10px;
+}
+
+.mainbox .banner .bg .content .companyIntroduction h3{
+	font-size: 30px;
+	font-weight: normal;
+	height: 50px;
+	width: 800px;
+	margin: 10px auto 10px;
+}
+
+.mainbox .banner .bg .content .companyIntroduction p{
+	font-size: 18px;
+	/*text-indent: 2em;*/
+	width: 800px;
+	margin: 30px auto;
+	text-align: left;
 }

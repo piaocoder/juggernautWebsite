@@ -1,0 +1,32 @@
+.service ul li {
+	width:200px;
+	background-color: #fff;
+	padding:20px;
+	margin-left:20px;
+	font-size:15px;
+	line-height:20px;
+	text-align: center;
+	height:300px;
+	overflow: hidden;
+}
+.service li>p{
+	margin-top:25px;
+	color:#333;
+}
+.service li>h3{
+	padding:10px 0;
+}
+.service li>.iconfont{
+	color:#00BFFF;
+	font-size:45px;
+}
+.service {
+	position: relative;
+}
+.service ul{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left:-480px;
+	margin-top:-150px;
+}

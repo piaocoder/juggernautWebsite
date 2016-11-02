@@ -10,7 +10,7 @@
 }
 
 .mainbox .banner{
-	background: url(./../img/main_bg_01.jpg) no-repeat;
+	background: url(./../img/homebg.png) no-repeat;
 	background-size:cover;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .mainbox .footer{
-	background: url(./../img/main_bg_03.jpg) no-repeat;
+	background: url(./../img/footer.jpg) no-repeat;
 	background-size:cover;
 }
 

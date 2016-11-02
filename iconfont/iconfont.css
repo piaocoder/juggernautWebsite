@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1478069479622'); /* IE9*/
-  src: url('iconfont.eot?t=1478069479622#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1478069479622') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1478069479622') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1478069479622#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1478078344324'); /* IE9*/
+  src: url('iconfont.eot?t=1478078344324#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1478078344324') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1478078344324') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1478078344324#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -31,6 +31,8 @@
 .icon-jiayouzhan:before { content: "\e651"; }
 
 .icon-mulu:before { content: "\e606"; }
+
+.icon-arrow2:before { content: "\e62e"; }
 
 .icon-ictruck:before { content: "\e620"; }
 

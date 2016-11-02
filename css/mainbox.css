@@ -13,9 +13,30 @@
 	background: url(./../img/homebg.png) no-repeat;
 	background-size:cover;
 }
+.mainbox .about{
+	background: url(./../img/main_bg_05.jpg) no-repeat;
+	background-size:cover;
+}
 
-.mainbox .content{
+.mainbox .service{
+	background: url(./../img/main_bg_02.jpg) no-repeat;
+	background-size:cover;
+}
+
+.mainbox .product{
+	background: url(./../img/main_bg_01.jpg) no-repeat;
+	background-size:cover;
+}
+
+.mainbox .footer{
+	background: url(./../img/footer.jpg) no-repeat;
+	background-size:cover;
+}
+
+.mainbox .banner .content{
 	/*height: 100%;*/
+	/*width: 0px;*/
+
 }
 
 .mainbox>div>div.bg{
@@ -29,15 +50,6 @@
 	transition: all .5s linear 1s;*/
 }
 
-.mainbox .service{
-	background: url(./../img/main_bg_02.jpg) no-repeat;
-	background-size:cover;
-}
-
-.mainbox .footer{
-	background: url(./../img/footer.jpg) no-repeat;
-	background-size:cover;
-}
 
 .mainbox .banner .bg{
 	/*-webkit-transform: translateX(-50%);
@@ -55,15 +67,67 @@
 }
 
 .mainbox .banner .bg .content .companyIntroduction{
-	width: 100%;
+	/*width: 100%;*/
 	min-height: 400px;
 	height: 50%;
+	/*width: 1;*/
 	/*margin-top: 10%;*/
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 	color: #fff;
 	margin: 0 auto;
 	/*text-align: left;*/
 }
+.mainbox .banner .bg .content .companyIntroduction{
+	-webkit-animation: widthAll 1s ease-in 0s;
+	-o-animation: widthAll 1s ease-in 0s;
+	animation: widthAll 1s ease-in 0s;
+}
+
+
+@keyframes widthAll{
+	0%{width: 0px;}
+	100%{width: 960px}
+}
+@-moz-keyframes widthAll{
+	0%{width: 0px;}
+	100%{width: 960px}
+}
+
+
+@-o-keyframes widthAll{
+	0%{width: 0px;}
+	100%{width: 960px}
+}
+
+@-webkit-keyframes widthAll{
+	0%{width: 0px;}
+	100%{width: 960px}
+}
+
+
+
+@keyframes opacityChange{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-moz-keyframes opacityChange{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-o-keyframes opacityChange{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-webkit-keyframes opacityChange{
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
 
 .mainbox .banner .bg .content .companyIntroduction h2{
 	font-size: 40px;
@@ -72,6 +136,10 @@
 	height: 120px;
 	width: 800px;
 	margin: 0px auto 10px;
+
+	-webkit-animation: opacityChange 2s ease-in 0s;
+	-o-animation: opacityChange 2s ease-in 0s;
+	animation: opacityChange 2s ease-in 0s;
 }
 
 .mainbox .banner .bg .content .companyIntroduction h3{
@@ -80,6 +148,9 @@
 	height: 50px;
 	width: 800px;
 	margin: 10px auto 10px;
+	-webkit-animation: opacityChange 2.3s ease-in 0s;
+	-o-animation: opacityChange 2.3s ease-in 0s;
+	animation: opacityChange 2.3s ease-in 0s;
 }
 
 .mainbox .banner .bg .content .companyIntroduction p{
@@ -88,4 +159,7 @@
 	width: 800px;
 	margin: 30px auto;
 	/*text-align: left;*/
+	-webkit-animation: opacityChange 3s ease-in 0s;
+	-o-animation: opacityChange 3s ease-in 0s;
+	animation: opacityChange 3s ease-in 0s;
 }

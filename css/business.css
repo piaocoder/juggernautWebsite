@@ -1,17 +1,20 @@
 .service ul li {
 	width:200px;
 	background-color: #fff;
-	padding:20px;
+	padding:40px 20px;
 	margin-left:20px;
 	font-size:15px;
 	line-height:20px;
 	text-align: center;
 	height:300px;
-	overflow: hidden;
+	box-shadow:0 0 10px #ccc;
+	transition:.3s;
 }
 .service li>p{
+	height:200px;
 	margin-top:25px;
 	color:#333;
+	overflow: hidden;
 }
 .service li>h3{
 	padding:10px 0;
@@ -29,4 +32,8 @@
 	left:50%;
 	margin-left:-480px;
 	margin-top:-150px;
+}
+.service ul li:hover{
+		box-shadow:0 0 20px #999;
+		transform:translateY(-20px);
 }

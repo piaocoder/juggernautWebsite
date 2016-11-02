@@ -1,0 +1,44 @@
+/*----------------about----------------*/
+.mainbox .about{
+
+}
+.mainbox .about .content{
+	padding-top: 70px;
+	color: #fff;
+}
+
+.mainbox .about .content>div{
+	width: 31%;
+	margin-left: .3%;
+	background: rgba(0,0,0,0.7);
+	text-align: left;
+	margin-top: 20%;
+	padding: .9%;
+	height: 280px;
+	overflow: hidden;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.mainbox .about .content>div:hover{
+	min-height: 800px;
+	margin-top: 0;
+}
+
+.mainbox .about .content>div h2{
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.mainbox .about .content>div p{
+	text-indent: 2em;
+	margin-bottom: 30px;
+	margin-top: 8px;
+}
+.mainbox .about .content>div.member p{
+	/*text-indent: 0;*/
+}

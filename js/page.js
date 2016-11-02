@@ -40,7 +40,7 @@
 	changePage(pageNum)
 	$('.header .nav ul li').click(function(){
 		var idx = $('.header .nav ul li').index(this);
-		console.log(idx);
+		// console.log(idx);
 		pageNum = changePage(idx);
 		// console.log(pageNum)
 		// pageNum = idx;

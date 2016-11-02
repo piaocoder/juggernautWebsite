@@ -81,13 +81,10 @@
 	line-height: 60px;
 }
 
-.header .tel b{
-	display: inline-block;
-	height: 30px;
-	width: 30px;
-	background: url(./../img/tel.png);
-	vertical-align: middle;
-	margin-top: -4px;
+.header .tel .iconfont{
+	font-size:20px;
+	line-height:30px;
+	margin-right:4px;
 }
 
 .header .tel a{

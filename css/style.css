@@ -52,7 +52,9 @@ del, ins, u, s, a, a:hover {
 }
 
 html{
-	overflow: hidden;
+	/*overflow: hidden;*/
+	overflow-y: hidden;
+	min-width: 1000px;
 }
 
 body,html{

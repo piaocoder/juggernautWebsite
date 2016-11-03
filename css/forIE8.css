@@ -1,4 +1,4 @@
-.header{
+﻿.header{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);    /*IE8支持*/
 }
 
@@ -6,7 +6,7 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000) !important;    /*IE8支持*/
 }
 #sidebar{
-	margin-top:20%;
+	margin-top:15%;
 	top:0;
 	position: absolute;
 	

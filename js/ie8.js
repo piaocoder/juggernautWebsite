@@ -1,0 +1,1 @@
+$(function(){$("#sidebar").addClass("positionFixed")})

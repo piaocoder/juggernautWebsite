@@ -9,6 +9,7 @@
 		}else if(num>=2){
 			num = 2;
 		}
+		// console.log(num)
 		$('.about .aboutSwiperCtrl li').removeClass('checked');
 		// console.log($('.about .aboutSwiperCtrl li').hasClass('checked').index())
 		$('.about .aboutSwiperCtrl li').eq(num).addClass('checked');
@@ -51,7 +52,11 @@
 			// console.log(e);
 			// console.log(e.offsetX);
 			// console.log(e.pageX);
-			e.preventDefault()
+			if(e.preventDefault){
+				e.preventDefault();
+			}else{
+				window.event.returnValue = false;
+			}
 
 			// aboutSwiper($(this).index());
 			// 

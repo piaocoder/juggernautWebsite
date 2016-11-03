@@ -3,11 +3,11 @@
 	var timer;
 	var slideSize=$(".product ul>li").size();
 	function autoplay(){
-			timer=setInterval(function(){
+		timer=setInterval(function(){
 			$(".next").click()
 		},5000);
 	}
-autoplay()
+	autoplay()
 	function clear(){
 		clearInterval(timer)
 	}
@@ -24,5 +24,6 @@ autoplay()
 		$(".product ul>li").eq(i).css("opacity",1).siblings().css("opacity",0)
 		$(".product ul>li").eq(i).find("h3,.product-show img").addClass("slide-active").end().siblings().find("h3,.product-show img").removeClass("slide-active")
 	})
-	}()
+	$(".next").click()
+}()
 

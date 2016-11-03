@@ -9,7 +9,6 @@
 		}else if(num>=2){
 			num = 2;
 		}
-		console.log(num)
 		$('.about .aboutSwiperCtrl li').removeClass('checked');
 		// console.log($('.about .aboutSwiperCtrl li').hasClass('checked').index())
 		$('.about .aboutSwiperCtrl li').eq(num).addClass('checked');

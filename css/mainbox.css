@@ -4,10 +4,7 @@
 	background: #ccc;
 	width: 100%;
 }
-.mainbox>div>div>div,.mainbox>div>div,.mainbox>div,.mainbox{
-	position: relative;
-	max-height: 100%;
-}
+
 .mainbox>div{
 	overflow: hidden;
 }
@@ -26,10 +23,7 @@
 	background-size:cover;
 }
 
-.mainbox .product{
-	background: url(./../img/main_bg_01.jpg) no-repeat;
-	background-size:cover;
-}
+
 
 .mainbox .footer{
 	background: url(./../img/footer.jpg) no-repeat;
@@ -37,7 +31,7 @@
 }
 
 .mainbox .banner .content{
-	height: 100%;
+	/*height: 100%;*/
 	/*width: 0px;*/
 
 }
@@ -64,33 +58,22 @@
 }
 
 .mainbox .banner .bg .content{
-	/*padding-top: 14%;*/
+	padding-top: 14%;
 	padding-top: 7%\9 !important;
 	padding-top: 7%\0 !important;
 }
-/*
+
 .mainbox .banner .bg .content .companyIntroduction{
+	/*width: 100%;*/
 	min-height: 400px;
 	height: 50%;
+	/*width: 1;*/
+	/*margin-top: 10%;*/
 	background: rgba(0,0,0,0.8);
 	color: #fff;
 	margin: 0 auto;
-}*/
-
-.mainbox .banner .bg .content .companyIntroduction{
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	height: 400px;
-	width: 960px;
-
-	color: #fff;
-	background: rgba(0,0,0,0.8);
+	/*text-align: left;*/
 }
-
 .mainbox .banner .bg .content .companyIntroduction{
 	-webkit-animation: widthAll 1s ease-in 0s;
 	-o-animation: widthAll 1s ease-in 0s;

@@ -24,6 +24,7 @@ pre, code, kbd, samp {
 	content:"";
 	display: block;
 	clear: both;
+	
 }
 textarea {
     overflow: auto;
@@ -53,7 +54,7 @@ del, ins, u, s, a, a:hover {
 html{
 	/*overflow: hidden;*/
 	overflow-y: hidden;
-	min-width: 960px;
+	min-width: 1000px;
 }
 
 body,html{

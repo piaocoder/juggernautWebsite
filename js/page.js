@@ -4,7 +4,6 @@
 	var flg = true;
 	
 
-	changePage(pageNum);
 	$('.header .nav ul li').click(function(){
 		var idx = $('.header .nav ul li').index(this);
 		// console.log(idx);
@@ -37,7 +36,16 @@
 				flg = true;
 			}, 750);
 		}
-	})
+	});
+	window.onresize = function(){
+		pageNum = changePage(pageNum);
+	}
+
+		// $(window).on('resize',function(){
+		// 	h=$(window).height();
+		// 	pageNum = changePage(pageNum);
+		// })
+	pageNum = changePage(pageNum);
 })()
 
 

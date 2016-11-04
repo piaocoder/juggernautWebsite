@@ -1,0 +1,67 @@
+*{
+	/*box-sizing: border-box;*/
+}
+
+@media screen and (max-width: 999px) {
+    .content {
+        /*background-color:lightblue;*/
+        width: 960px !important;
+    }
+    .content>div{
+    	max-width: 960px  !important;
+    }
+    .mainbox .about .content .aboutSwiper{
+		width: 860px;
+	}
+	.mainbox .about .content .aboutSwiper .bigContent>div{
+		width: 820px;
+	}
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1000px) {
+    .content {
+        /*background-color:lightblue;*/
+        width: 1000px !important;
+    }
+    .content>div{
+    	max-width: 1000px  !important;
+    }
+    .mainbox .about .content .aboutSwiper{
+		width: 900px;
+	}
+	.mainbox .about .content .aboutSwiper .bigContent>div{
+		width: 860px;
+	}
+}
+
+@media screen and (max-width: 1799px) and (min-width: 1400px) {
+    .content {
+        /*background-color:lightblue;*/
+        width: 1400px !important;
+    }
+    .content>div{
+    	max-width: 1400px  !important;
+    }
+    .mainbox .about .content .aboutSwiper{
+		width: 1250px;
+	}
+	.mainbox .about .content .aboutSwiper .bigContent>div{
+		width: 1210px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+    .content {
+        /*background-color:lightblue;*/
+        width: 1600px !important;
+    }
+    .content>div{
+    	max-width: 1600px  !important;
+    }
+    .mainbox .about .content .aboutSwiper{
+		width: 1480px;
+	}
+	.mainbox .about .content .aboutSwiper .bigContent>div{
+		width: 1440px;
+	}
+}

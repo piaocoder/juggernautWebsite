@@ -6,6 +6,7 @@
 	transform:translateY(-50%);
 	background: rgba(255,255,255,0.65);
 	border-radius: 10px 0 0 10px ;
+	z-index: 999;
 }
 #sidebar .iconfont{
 	font-size: 20px;
@@ -19,19 +20,25 @@
 }
 #sidebar p{
 	transition:all .3s;
+	z-index: 1
 }
 #sidebar p.disabled{
 	color: #aaa;
 }
 #sidebar .weixin:hover{
-	color:#62b900;
+	color:#a62307;
+}
+#sidebar .weixin:hover .contact-info{
+	height: 100px;
+	/*margin-top: -50%*/
 }
 #sidebar .qq:hover{
 	color:#d22222;
 }
 #sidebar .tel:hover{
-	color:#00BFFF;
+	color:#005818;
 }
+
 #sidebar .email:hover{
 	color:gold;
 }
@@ -39,25 +46,52 @@
 	position: relative;
 	
 }
-.contact-info{
-	position: absolute;
-	bottom:0;
-	right:55px;
-	width:100px;
+.weixin .contact-info img{
 	height: 100px;
-	background-color: #fff;
-	display: none;
+	width: 100px;
+	max-width: 100px;
+}
+.contact-info{
+	background: rgba(255,255,255,0.65);
+	position: absolute;
+	right:50px;
+	width:0px;
+	/*height: 100px;*/
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	display: inline-block;
+	visibility: hidden;
+	z-index: -1;
+	border-radius: 6px 0 0 6px;
+}
+.weixin .contact-info{
+	/*margin-top:-50%;*/
+	top: -25px;
+	height: 100px;
+	width: 0px;
 }
 .qrcode img{
 	width:100%;
 	height: 100%;
 }
 #sidebar p:hover .contact-info{
-	display: inline-block;
+	opacity: 1;
+	/*right:50px;*/
+	width: 100px;
+	visibility: visible;
+}
+.tel:hover .contact-info{
+	width: 150px !important;
 }
 .tel .contact-info{
-	height:50px;
-	font-size: 16px;
-	
+	height: 50px;
+	font-size: 18px;
+	color:#005818;
+	font-family: helvetica
 }
-

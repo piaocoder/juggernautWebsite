@@ -2,7 +2,7 @@
 	width:200px;
 	background-color: #fff;
 	padding:40px 20px;
-	margin-left:20px;
+	margin-left:60px;
 	font-size:15px;
 	line-height:20px;
 	text-align: center;
@@ -18,10 +18,10 @@
 	overflow: hidden;
 }
 .service li>h3{
-	padding:10px 0;
+	padding-top:20px;
 }
 .service li>.iconfont{
-	color:#00BFFF;
+	color:#A62307;
 	font-size:45px;
 }
 .service {

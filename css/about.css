@@ -20,6 +20,7 @@
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	min-height: 600px;
 }
 
 .mainbox .about .content .aboutSwiperCtrl{
@@ -65,23 +66,25 @@
 	overflow: hidden;
 	text-align: left;
 	text-indent: 2em;
+	min-height: 600px;
 }
 
 .mainbox .about .content .aboutSwiper .bigContent{
 	width: 300%;
 	height: 100%;
-	-webkit-transition: all .6s .1s;
-	-moz-transition: all .6s .1s;
-	-ms-transition: all .6s .1s;
-	-o-transition: all .6s .1s;
-	transition: all .6s .1s;
+	-webkit-transition: all .6s cubic-bezier(0.3,0.5,1,1);
+	-moz-transition: all .6s cubic-bezier(0.3,0.5,1,1);
+	-ms-transition: all .6s cubic-bezier(0.3,0.5,1,1);
+	-o-transition: all .6s cubic-bezier(0.3,0.5,1,1);
+	transition: all .6s cubic-bezier(0.3,0.5,1,1);
 	margin-left: 0px;
+	min-height: 600px;
 }
 
 
 .mainbox .about .content .aboutSwiper .bigContent>div{
 	width: 820px;
-	min-height: 400px;
+	min-height: 600px;
 	padding: 20px;
 	background: rgba(0,0,0,0.6);
 	cursor: -webkit-grab;

@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="北京杰格纳科技有限公司的目标是通过信息数据的共享、挖掘及分析为客户提供优质的数据分析、技术支持以及决策支撑。杰格纳科技的理念是“信息助力思维，技术颠覆传统”，以期通过互联网的手段增强数据的力量，冲击既有思维，改变传统认知，为客户提供更真实、有效、诚信、科学的数据、技术及软件服务。"/>
+		<meta name="Keywords" content="juggernaut，juggernaut tech,北京，北京科技公司，北京杰格纳科技有限公司，汽车维修记录查询，医院病历系统，加油站积分系统"/>
 		<title>北京杰格纳科技有限公司</title>
+		<link rel="stylesheet" type="text/css" href="./dist/css/swiper.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/mainbox.css">
@@ -12,8 +16,10 @@
 		<link rel="stylesheet" type="text/css" href="css/about.css">
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/product.css" />
-
+		<link rel="stylesheet" type="text/css" href="css/myswiper.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
 		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="dist/js/swiper.jquery.min.js" ></script>
 		<!--[if IE 8]>
 			<link rel="stylesheet" type="text/css" href="css/forIE8.css">
 			<script type="text/javascript" src="js/ie8.js"></script>
@@ -25,11 +31,11 @@
 		<div class="header positionFixed">
 			<div class="content clearfix">
 				<a class="logo l" href="javascript:;">
-					<img src="./img/logo.png">
-					<p>Juggernaut</p>
+					<img class="l" src="./img/logo.png">
+					<p class="l clearfix">Juggernaut</p>
 				</a>
 				<!-- 导航 -->
-				<div class="nav r">
+				<div class="nav r clearfix">
 					<ul>
 						<li class="checked"><a href="javascript:;">首页</a></li>
 						<li><a href="javascript:;">关于我们</a></li>
@@ -43,19 +49,65 @@
 		<!-- main -->
 		<div class="mainbox">
 			<!-- banner -->
-			<div class="banner">
-				<div class="bg">
-					<div class="content">
-						<div class="companyIntroduction">
-							<h2>北京市杰格纳科技有限公司</h2>
-							<h3>Juggernaut Technology</h3>
-							<p>北京杰格纳科技为您提供优质的数据分析、技术支持以及决策支撑。</p>
-							<p>公司坚持“信息助力思维，技术颠覆传统”的思想，走在数据前沿。</p>
-							<p>以增强数据的力量，冲击既有思维，改变传统认知。</p>
+			<div class="banner swiper-container">
+				<div class="swiper-wrapper">
+					<div class="bg swiper-slide swiper1">
+						<div class="content">
+							<div class="companyIntroduction">
+								<h1>北京市杰格纳科技有限公司1</h1>
+								<h3>Juggernaut Technology</h3>
+								<p>北京杰格纳科技为您提供优质的数据分析、技术支持以及决策支撑。</p>
+								<p>公司坚持“信息助力思维，技术颠覆传统”的思想，走在数据前沿。</p>
+								<p>以增强数据的力量，冲击既有思维，改变传统认知。</p>
+							</div>
+							<!-- <div class="conpanyPruduct r"></div> -->
 						</div>
-						<!-- <div class="conpanyPruduct r"></div> -->
+					</div>
+					<div class="bg swiper-slide swiper2">
+						<div class="content">
+							<p>让天下没有难做的生意</p>
+							<!-- <div class="companyIntroduction">
+								<h1>北京市杰格纳科技有限公司2</h1>
+								<h3>Juggernaut Technology</h3>
+								<p>北京杰格纳科技为您提供优质的数据分析、技术支持以及决策支撑。</p>
+								<p>公司坚持“信息助力思维，技术颠覆传统”的思想，走在数据前沿。</p>
+								<p>以增强数据的力量，冲击既有思维，改变传统认知。</p>
+							</div> -->
+							<!-- <div class="conpanyPruduct r"></div> -->
+						</div>
+					</div>
+					<div class="bg swiper-slide swiper3">
+						<div class="content">
+							<div class="companyIntroduction">
+								<h1>北京市杰格纳科技有限公司3</h1>
+								<h3>Juggernaut Technology</h3>
+								<p>北京杰格纳科技为您提供优质的数据分析、技术支持以及决策支撑。</p>
+								<p>公司坚持“信息助力思维，技术颠覆传统”的思想，走在数据前沿。</p>
+								<p>以增强数据的力量，冲击既有思维，改变传统认知。</p>
+							</div>
+							<!-- <div class="conpanyPruduct r"></div> -->
+						</div>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
+				<!-- <div class="swiper-button-prev"></div> -->
+				<!-- <div class="swiper-button-next"></div> -->
+				<script type="text/javascript">
+					var mySwiper = new Swiper('.swiper-container',{
+						autoplay : 5000,
+						speed : 1500,
+						autoplayDisableOnInteraction : false,
+						hashnav:false,
+						hashnavWatchState:false,
+						touchRatio : 0.5,
+						threshold : 100,
+						// prevButton: '.swiper-button-prev',	//向左按钮
+						// nextButton: '.swiper-button-next',	//向右按钮
+						loop : true,
+						pagination : '.swiper-pagination',
+						paginationClickable : true
+					})
+				</script>
 			</div>
 			<!--about-->
 			<div class="about">
@@ -168,7 +220,7 @@
 			<!-- footer -->
 				<div class="footer">
 				<div class="wrapper">
-						<img src="img/logo_01.jpg" class="footer-logo l"/>
+						<img src="img/logo.png" class="footer-logo l"/>
 						<div class="contact">
 							<ul class="clearfix">
 								<li class="l">
@@ -190,10 +242,10 @@
 		</div>
 		<div id="sidebar">
 			<p class="iconfont arrow-up">&#xe62e;</p>
-			<p class="iconfont tel">&#xe645;<span class=" contact-info">13522777602</span></p>
+			<p title="电话" class="iconfont tel">&#xe645;<span class=" contact-info">135-2277-7602</span></p>
 			<p class="iconfont weixin">&#x3433;<span class="contact-info"><img src="img/logo.png"/></span></p>
-			<p class="iconfont email"><a href="mailto：349608583@qq.com">&#xe61f;</a></p>
-			<p class="iconfont qq"><a href="tencent://message/?uin=349608583">&#xe62d;</a></p>
+			<p title="发邮件" class="iconfont email"><a href="mailto：349608583@qq.com">&#xe61f;</a></p>
+			<p title="发QQ消息" class="iconfont qq"><a href="tencent://message/?uin=349608583">&#xe62d;</a></p>
 			<p class="iconfont arrow-down">&#xe60a;</p>
 		</div>
 	</body>

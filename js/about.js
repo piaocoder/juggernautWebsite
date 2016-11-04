@@ -45,35 +45,44 @@
 	$('.about .aboutSwiper .bigContent').bind( 'mousedown' ,function(e){
 		// console.log(this)
 		var e = e || window.event;
-		var x1 = e.offsetX || e.pageX,x2;
+		var x1 = e.offsetX || e.pageX,x2,x3,x4;
 
 		var that = this;
-		$(this).bind('mousemove', function(e){
+		$(document).bind('mousemove', function(e){
 			// console.log(e);
 			// console.log(e.offsetX);
 			// console.log(e.pageX);
+			var e = e || window.event;
+			var x3 = e.offsetX || e.pageX;
 			if(e.preventDefault){
 				e.preventDefault();
 			}else{
 				window.event.returnValue = false;
 			}
+			// var num= parseInt( $('#sampleDiv').css('marginLeft') );
+			$('.about .aboutSwiper .bigContent').css('marginLeft', parseInt($('.about .aboutSwiper .bigContent').css('marginLeft')) + (x3 - x1) * 0.5 + 'px')
+			// console.log(parseInt($('.about .aboutSwiper .bigContent').css('marginLeft')) + x3 - x1 + 'px')
+
 
 			// aboutSwiper($(this).index());
 			// 
 		})
-		$(this).bind('mouseup',function(e){
+		$(document).bind('mouseup',function(e){  //	此处对全局写事件，
 			var e = e || window.event;
 			x2 = e.offsetX || e.pageX;
 			$(that).unbind('mousemove');
-			console.log(swiperNum)
-			if(x2 - x1 > 0){
+			// console.log(swiperNum)
+			if(x2 - x1 > 100){
 				swiperNum = aboutSwiper(--swiperNum);
-			}if(x1 - x2 > 0){
+			}else if(x1 - x2 > 100){
 				swiperNum = aboutSwiper(++swiperNum);
+			}else{
+				swiperNum = aboutSwiper(swiperNum);
 			}
 		})
 
 		$(document).bind('mouseup',function(){
+			$(this).unbind('mousemove');
 			$(that).unbind('mousemove');
 			$(that).unbind('mouseup');
 			$(this).unbind('mouseup');

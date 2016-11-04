@@ -1,0 +1,32 @@
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 140px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 100px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 0;
+  background: #000;
+  opacity: 0.2;
+}
+
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #a62307;
+}
+
+.bg.swiper2{
+	background: url(../img/car.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.bg.swiper2 p{
+	margin-top: 200px;
+	color: #fff;
+	font-size: 60px;
+}

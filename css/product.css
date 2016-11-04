@@ -2,13 +2,15 @@
 	position: absolute;
 	top:0;
 	left:0;
-	opacity:0;
-	transition:.3s;
+	display: none;
+	width:100%;
+	padding:0 50px;
 }
 .product{
 	position: relative;
 }
 .product ul{
+	position: relative;
 	height:400px;
 }
 .product-show img{
@@ -21,29 +23,29 @@
 .product-show img:nth-child(2){
 	animation-delay: .2s;
 }
-.product-show img:nth-child(3){
-	animation-delay: .3s;
-}
 @keyframes bounce{
 	0%{transform:translateY(0px)}
 	50%{transform:translateY(-50px)}
 	100%{transform:translateY(0px)}
 }
 .product-show{
-	margin-left:270px;
+
 }
 .product h3{
-	margin-left:40px;
-	opacity:0;
-	transform:translateY(-50px);
-	transition:.2s;
+	font-size:40px;
+	text-align: center;
+	padding:25px 0;
+	margin-bottom:50px;
 }
 .product h3.slide-active{
-	opacity:1;
-	transform:tranlateY(0px);
+	transform:translateY(10px);
+}
+.download.slide-active{
+	transform:translateY(10px);
 }
 .product .wrapper{
-	margin-top:-200px;
+	margin-top:-250px;
+	height:500px;
 }
 .slide-arrow{
 	position: absolute;
@@ -57,10 +59,41 @@
 	color:white;
 	text-align: center;
 	cursor: pointer;
+	opacity: 0;
+	transition:.3s;
+}
+.product ul:hover .slide-arrow{
+	opacity: 1;
 }
 .prev{
 	left:0;
 }
 .next{
 	right:0;
+}
+.download{
+	margin-left:500px;
+	transition:.5s;
+	transform:translateY(-20px);
+}
+.download img{
+	width:150px;
+	height: 150px;
+}
+.download-btn{
+	text-align: center;
+	background-color: #d8a064;
+	font-size:20px;
+	width:150px;
+	height: 50px;
+	line-height:50px;
+	opacity: 1;
+	margin-right:25px;
+	margin-top:100px;
+	margin-left:50px;
+	color:#fff;
+	transition:.2s;
+}
+.download-btn:hover{
+	opacity:0.8;
 }
